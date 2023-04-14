@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        
+        <div id="header">
+            
+               
+                
+                <div class="main-out">
+                    <input type="text" id="output">
+                    <div class="container-form2">
+                    <input type="text" id="output2">
+                </div>
+                </div>
+                
+                
+            
+        </div>
+            <div id="content">
+                <button onclick="clearDisplay()" id="clear"  class="btn">C</button>
+                <button onclick="clearDisplayAll()" id="AllClear"  class="btn">AC</button>
+                <div class="content-top">
+                    
+                <button onclick="number(7)" id="7" class="btn">7</button>
+                <button onclick="number(8)" id="8" class="btn">8</button>
+                <button onclick="number(9)" id="9" class="btn">9</button>
+                <button onclick="operatorClick('/')" id="division" class="btn">/</button>
+                </div>
+                <div class="content-middle">
+                    <button onclick="number(4)" id="4" class="btn">4</button>
+                    <button onclick="number(5)" id="5" class="btn">5</button>
+                    <button onclick="number(6)" id="6" class="btn">6</button>
+                    <button onclick="operatorClick('*')" id="multiplication" class="btn">*</button>
+                </div>
+                    <div class="content-bottom">
+                        <button onclick="number(1)" id="1" class="btn">1</button>
+                        <button onclick="number(2)" id="2" class="btn">2</button>
+                        <button onclick="number(3)" id="3" class="btn">3</button>
+                        <button onclick="operatorClick('-')" id="substraction" class="btn">-</button>
+                    </div>
+                        <div class="content-footer">
+                            <button onclick="number(0)" id="0" class="btn">0</button>
+                            <button onclick="number('.')" id="dot" class="btn">.</button>
+                            <button onclick="operatorClick('+')" id="plus" class="btn">+</button>
+                            <button onclick="equalsClick('=')" id="equals" class="btn">=</button>
+                        </div>
+                
+            </div>
+        
+    </div>
+    
+</body>
+</html>
